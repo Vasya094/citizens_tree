@@ -1,0 +1,6 @@
+export const INFO_REQ = "INFO_REQ"
+export const INFO_SUC = "INFO_SUC"
+export const INFO_FAIL = "INFO_FAIL"
+export const CITIZEN_INFO_REQUEST = "CITIZEN_INFO_REQUEST"
+export const CITIZEN_INFO_SUCCESS = "CITIZEN_INFO_SUCCESS"
+export const CITIZEN_INFO_FAIL = "CITIZEN_INFO_FAIL"

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:&family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:&family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_div--continer {
+  background: rgb(25, 170, 188);
+  background: linear-gradient(180deg, rgb(22, 154, 172) 0%, rgb(43, 209, 231) 100%);
+  margin: -68px 2rem 0 2rem;
+  padding: 0;
+  /* height: 112vh; */
+}
+
+.App {
+  padding-top: 105px;
+  height: 106vh;
+}
+
+.App--h1 {
+  font-family: 'Commissioner', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 3px 3px 4px black;
+  position: relative;
+  width: 50rem;
+  min-width: 100px;
+  left: 12%;
+  top: -2%;
+}
+
+@media only screen and (max-width: 500px) {
+  .App--h1 {
+    font-size: 3rem;
+    max-width: 300px;
+    word-wrap: break-word;
+    left: 10%;
+  }
+}
+
+.child_div {
+  margin-top: 4rem;
+}
+
+.App--link_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link--button {
+  height: 3rem;
+  outline: none;
+  border: none;
+  width: 18rem;
+  border-radius: 1rem;
+  background-color: rgb(9, 91, 102);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: inherit;
+  font-family: 'Commissioner', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.link--button:hover {
+  outline: none;
+  border: none;
+  height: 3rem;
+  width: 18rem;
+  background-color: white;
+  color: rgb(9, 91, 102);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.link--button:active {
+  outline: none;
+  border: none;
+}
+
+.Link--button_container {
+  margin: 0.9rem 0;
+  height: 2rem;
+}
+
+.home-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 65px;
+  height: 65px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.home-icon:hover,
+.home-icon:focus,
+.home-icon:active.home-icon:visited {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.child_div--main_parent {
+  color: snow;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 4px 4px 7px black;
+  border-bottom: 5px solid black;
+  width: 33rem;
+  max-width: 50rem;
+  left: 50%;
+  transform: translate(-50%, -36%);
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .child_div--main_parent {
+    font-size: 3rem;
+    max-width: 300px;
+    word-wrap: break-word;
+
+  }
+}
+
+.child_div:last-child {
+  padding-bottom: 10rem;
+}
+
+.first_list--header {
+  font-size: 3rem;
+  border-left: 8px solid black;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .first_list--header {
+    font-size: 2.5rem;
+    width: 350px;
+    word-wrap: break-word;
+
+  }
+}
+
+.first_list--unordered_list {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .first_list--unordered_list {
+    font-size: 2.5rem;
+    flex-direction: column;
+
+  }
+}
+
+.first_list--list_item {
+  border-top: 4px solid black;
+}
+
+.first_list--list_item::marker {
+  content: "⛊";
+  color: #000000;
+  font-size: 1.8rem;
+}
+
+strong .citizens_container-italic {
+  font-size: 1.5rem;
+}
+
+.citizens_container .ordered_list--item {
+  font-size: 1.5rem;
+}
+
+.Second_container .Second_container--list_item::marker {
+  content: "♛";
+  color: #000000;
+  font-size: 2rem;
+}
+
+.Second_container .Second_container--list_item {
+  border-right: 4px solid black;
+  padding-right: 1rem;
+}
+.strong--tooltiptext {
+
+}
+.strong {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.strong .strong--tooltiptext {
+  visibility: hidden;
+  width: 192px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: -142%;
+  left: 114%;
+  z-index: 1;
+  height: 48px;
+  font-size: 17px;
+}
+.strong:hover .strong--tooltiptext {
+  visibility: visible;
+}
