@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "proxy":  "https://127.0.0.1:5000",
+  "proxy": "https://127.0.0.1:5000",
   "engines": {
     "node": "15.x"
   },
@@ -21,8 +21,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "lodash": "^4.17.21",
+    "mongoose": "^5.12.5",
     "morgan": "^1.10.0",
     "react-router-bootstrap": "^0.25.0"
   },
