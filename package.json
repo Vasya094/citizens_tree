@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "proxy":  "https://127.0.0.1:5000",
   "engines": {
     "node": "15.x"
   },
-  "proxy": "https://127.0.0.1:5000",
   "scripts": {
-    "start": "node BackEnd/index.js",
+    "start": "node BackEnd/index",
     "server": "nodemon BackEnd/index",
     "client": "npm start --prefix project",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -23,6 +23,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
     "react-router-bootstrap": "^0.25.0"
   },
   "devDependencies": {

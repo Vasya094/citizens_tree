@@ -4,7 +4,7 @@ import { First } from "./First";
 
 export const SecondTest = ({ name, children, groups, size }) => {
   if (children.childsCollection[0].hierachyNumber - 1 === size) {
-    return <Citizens data={children.childsCollection.filter((evertC) => evertC.childName)} />;
+    return <Citizens key={name} data={children.childsCollection.filter((evertC) => evertC.childName)} />;
   }
   return (
     <div className="Second_container">

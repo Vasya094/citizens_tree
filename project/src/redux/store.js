@@ -18,16 +18,20 @@ const reducer = combineReducers({
   info: infoReducer,
 });
 
-const info = localStorage.getItem("citizensInfo")
-  ? JSON.parse(localStorage.getItem("citizensInfo"))
+const info = localStorage.getItem("info")
+  ? JSON.parse(localStorage.getItem("info"))
   : [];
-const locations = localStorage.getItem("locationsInfo")
-  ? JSON.parse(localStorage.getItem("locationsInfo"))
+const locations = localStorage.getItem("locations")
+  ? JSON.parse(localStorage.getItem("locations"))
   : [];
-
+const groups = localStorage.getItem("groups")
+  ? JSON.parse(localStorage.getItem("groups"))
+  : [];
+// console.log(groups)
 const initialState = {
-  info: { loading: false, error: false, info },
-  locations: { locations },
+  info: { loading: false, error: false, info:info },
+  locations: {loading: false, error: false, locations: locations  },
+  groups: {loadingGR: false, error: false,groups: groups}
 };
 
 const middleware = [thunk];

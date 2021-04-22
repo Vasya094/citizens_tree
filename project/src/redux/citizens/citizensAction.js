@@ -6,7 +6,7 @@ export const listCitizens = () => async (dispatch) => {
   try {
     dispatch({ type: CITIZENS_REQ });
     
-    const { data } = await axios.get( `http://localhost:5000/api/citizens` );
+    const { data } = await axios.get( `/api/citizens` );
    
     dispatch({
       type: CITIZENS_SUC,

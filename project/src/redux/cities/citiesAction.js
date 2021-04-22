@@ -8,7 +8,7 @@ export const listCities = () => async (dispatch) => {
   try {
     dispatch({ type: CITIES_REQ });
     
-    const { data } = await axios.get( `http://localhost:5000/api/cities` );
+    const { data } = await axios.get( `/api/cities` );
    
     dispatch({
       type: CITIES_SUC,

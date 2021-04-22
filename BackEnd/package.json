@@ -1,10 +1,15 @@
 {
   "name": "BackEnd",
+  "proxy": {
+    "/api": {
+      "target": "https://127.0.0.1:5000",
+      "secure": false
+    }
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "proxy": "http://localhost:5000",
   "engines": {
     "node": "15.x"
   },

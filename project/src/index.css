@@ -205,13 +205,14 @@ strong .citizens_container-italic {
 .strong {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  text-shadow: 2px 2px 2px white;
 }
 .strong .strong--tooltiptext {
   visibility: hidden;
   width: 192px;
   background-color: black;
   color: #fff;
+  text-shadow: none;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;

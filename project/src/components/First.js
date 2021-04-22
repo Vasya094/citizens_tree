@@ -4,7 +4,7 @@ import { SecondTest } from "./Second";
 
 export const First = ({ name, children, groups, size }) => {
   if (children.childsCollection[0].hierachyNumber - 1 === size) {
-    return <Citizens data={children.childsCollection.filter((evertC) => evertC.childName)} />;
+    return <Citizens key={name} data={children.childsCollection.filter((evertC) => evertC.childName)} />;
   }
   return (
     <div className="first_list">
@@ -15,7 +15,7 @@ export const First = ({ name, children, groups, size }) => {
         {children.childsCollection
           .filter((every) => !!every.childName)
           .map((chld) => (
-            <li className="first_list--list_item">
+            <li key={chld.childId} className="first_list--list_item">
               {" "}
               <h4>{chld.childName}</h4>
               <SecondTest

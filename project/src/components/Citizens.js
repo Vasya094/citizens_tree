@@ -1,11 +1,9 @@
 import React from "react";
-import {  useSelector } from "react-redux";
-
+import { useSelector } from "react-redux";
 
 const Citizens = ({ data }) => {
   const infoData = useSelector((state) => state.info);
   const { error, info } = infoData;
-  console.log(info);
 
   return (
     <div className="citizens_container">
@@ -19,7 +17,7 @@ const Citizens = ({ data }) => {
               <strong className="strong">
                 <i className="citizens_container-italic">{citizen.childName}</i>
                 <span className="strong--tooltiptext">
-                  {userInfo.name}, {userInfo.cityInfo.data} жителей
+                  {userInfo.cityInfo.name}, {userInfo.cityInfo.data} жителей
                 </span>
               </strong>
             </li>

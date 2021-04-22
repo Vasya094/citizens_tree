@@ -14,13 +14,13 @@ export const listInfo = () => async (dispatch) => {
   try {
     dispatch({ type: INFO_REQ });
 
-    const { data } = await axios.get(`http://localhost:5000/api/info`);
+    const { data } = await axios.get(`/api/info`);
 
     dispatch({
       type: INFO_SUC,
       payload: data,
     } );
-    localStorage.setItem('citizensInfo', JSON.stringify(data))
+    localStorage.setItem('info', JSON.stringify(data))
   } catch (error) {
     dispatch({
       type: INFO_FAIL,
@@ -37,7 +37,7 @@ export const getCitizenInfo = (id) => async (dispatch, getState) => {
     dispatch({
       type: CITIZEN_INFO_REQUEST,
     } );  
-    const { data } = await axios.get(`http://localhost:5000/api/info/${id}`);
+    const { data } = await axios.get(`/api/info/${id}`);
     dispatch( {
       type: CITIZEN_INFO_SUCCESS,
       payload: data

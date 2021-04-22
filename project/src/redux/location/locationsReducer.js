@@ -5,12 +5,9 @@ import {ADD_LOCATION,
 
 
 
-export const locationsReducer = (state = {locations: []}, action) => {
+export const locationsReducer = ( state = { locations: [] }, action ) => {
+  debugger
   switch (action.type) {
-    case ADD_LOCATION:
-      const locations = action.payload;
-
-      return [ ...state, locations ]
       case LOCATION_REQ:
         return { loading: true, locations: [] };
       case LOCATION_SUC:
@@ -20,7 +17,7 @@ export const locationsReducer = (state = {locations: []}, action) => {
           
         };
       case LOCATION_FAIL:
-        return { loading: false, error: action.payload };
+        return { loading: false, locations: state.locations };
     default:
       return state;
   }

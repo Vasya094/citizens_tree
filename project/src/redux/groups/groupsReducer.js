@@ -7,16 +7,16 @@ import {GROUPS_REQ,
 export const groupsReducer = (state = {groups: []}, action) => {
   switch (action.type) {
       case GROUPS_REQ:
-        return { loading: true, groups: [] };
+        return { loadingGR: true, groups: [] };
       case GROUPS_SUC:
       return {
   
-          loading: false,
+        loadingGR: false,
           groups: action.payload,
           
         };
       case GROUPS_FAIL:
-        return { loading: false, error: action.payload };
+        return { loadingGR: false, error: action.payload };
     default:
       return state;
   }
