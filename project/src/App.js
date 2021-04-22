@@ -14,22 +14,18 @@ const App = () => {
   const { loading, locations } = useSelector( ( state ) => state.locations );
   
   const {loadingGR, groups } = useSelector( ( state ) => state.groups );
-  debugger
-  console.log(groups, 1)
-  console.log(locations, 2)
+  
+
   useEffect( () => {
     if ((!loadingGR && groups.length === 0) || (!loading && locations.length === 0) ){
-     debugger
    batch( () => {
       dispatch( listGroups() );
       dispatch( listLocations() );
-      dispatch( listInfo() );
+      // dispatch( listInfo() );
    } )
   }
   }, [dispatch, groups, locations, loadingGR,loading]);
 
-
-  // const { loading, locations } = locationsData;
   return (
     <div className="main_div main_div--continer">
       <Route path="/" render={() => <MainPage />} exact />
